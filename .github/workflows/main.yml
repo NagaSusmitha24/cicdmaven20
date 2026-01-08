@@ -84,6 +84,6 @@ jobs:
           -Danypoint.user="${{secrets.USER}}" \
           -Danypoint.pw="${{secrets.PASS}}" \
           -Danypoint.businessGroup="${{secrets.ANY_POINT_ID}}" \
-          -Denv=""${{secrets.ENV}}"" \
+          -Denv="${{secrets.ENV}}" \
           -Dappname="cicdmaven20"
  
