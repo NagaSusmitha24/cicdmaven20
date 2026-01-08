@@ -94,7 +94,7 @@ jobs:
 
           -Danypoint.businessGroup="${{secrets.ANY_POINT_ID}}" \
 
-          -Denv=""${{secrets.ENV}}"" \
+          -Denv="${{secrets.ENV}}" \
 
           -Dappname="cicdmaven20"
  
