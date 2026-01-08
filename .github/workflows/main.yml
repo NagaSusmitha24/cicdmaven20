@@ -45,13 +45,9 @@ jobs:
       #   run: mvn clean package -DmuleDeploy
 
       - name: Publish to Exchange
-
         run: |
-
           mvn deploy --settings .settings/settings.xml -DskipMunitTests \
-
           -Danypoint.user="${{secrets.USER}}" \
-
           -Danypoint.pw="${{secrets.PASS}}"
  
   deploydev:
@@ -83,18 +79,11 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Deploy to dev
-
         run: |
-
           mvn deploy --settings .settings/settings.xml -DskipMunitTests -DmuleDeploy \
-
           -Danypoint.user="${{secrets.USER}}" \
-
           -Danypoint.pw="${{secrets.PASS}}" \
-
           -Danypoint.businessGroup="${{secrets.ANY_POINT_ID}}" \
-
-          -Denv="${{secrets.ENV}}" \
-
+          -Denv=""${{secrets.ENV}}"" \
           -Dappname="cicdmaven20"
  
