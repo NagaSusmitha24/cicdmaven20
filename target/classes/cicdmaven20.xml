@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="cicdmaven20Flow" doc:id="d62b273c-4e38-4d3f-8dfb-1136abedf432" >
 		<http:listener doc:name="Listener" doc:id="3470000f-ea8f-4c95-88a4-f59d730c241e" config-ref="HTTP_Listener_config" path="/cicd"/>
-		<set-payload value='#[{&#10;	"name":"sushmita"&#10;}]' doc:name="Set Payload" doc:id="e5006e37-3b5f-429d-8fad-3d9bfb087070" />
+		<set-payload value='#[{&#10;	"name":"susmitha"&#10;}]' doc:name="Set Payload" doc:id="e5006e37-3b5f-429d-8fad-3d9bfb087070" />
 		<logger level="INFO" doc:name="Logger" doc:id="19f1f921-435e-4c6e-88f6-2af8fc401158" message="#[payload]"/>
 		<ee:transform doc:name="Transform Message" doc:id="82064335-a6a5-4a24-8a11-f9a5275a43d1" >
 			<ee:message >
@@ -21,4 +21,5 @@ payload]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 	</flow>
+
 </mule>
