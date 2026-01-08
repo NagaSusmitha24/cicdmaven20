@@ -6,7 +6,7 @@
 
 	<groupId>92dc7113-3927-47b4-9abf-6d3e0b42f1e4</groupId>
 	<artifactId>cicdmaven20</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>cicdmaven20</name>
